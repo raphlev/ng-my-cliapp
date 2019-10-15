@@ -432,7 +432,12 @@
       <h2>Today component!</h2>
       <app-today></app-today>
     </div>
-
+    <div>
+      <h2>Todo component!</h2>
+ <input placeholder="Nouveau todo" [(ngModel)]="newTodoText" /> 
+  <button (click)="addTodo()">Ajouter Todo</button> 
+   <app-todo *ngFor="let todo of todoList" [todo]="todo"> </app-todo> 
+    </div>
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
