@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { TodoModel } from './todo-model'; 
+import {TodoModel} from './todo.model';
+
 
 @Component({
   selector: 'app-todo',

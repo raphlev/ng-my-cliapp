@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TodoModel} from './todo/todomodel';
+import {TodoModel} from './todo/todo.model';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,8 @@ export class AppComponent {
          if (this.newTodoText) {
              this.todoList.push({ 
                text: this.newTodoText, 
-                isChecked: false      }); 
+                isChecked: false 
+             }); 
               this.newTodoText = "";
             }
             else {
