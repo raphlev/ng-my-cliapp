@@ -72,3 +72,17 @@ Let npm-force-resolutions do it's thing
 - npx npm-force-resolutions
 - npm install
 - re-run your audit npm audit.
+
+# Fix ERROR in The Angular Compiler requires TypeScript >=3.4.0 and <3.6.0 but 3.6.4 was found instead
+Check in npm the previous version available
+In package.json,
+    replace
+        "devDependencies": {
+            ..
+            "typescript": "^3.6.4"
+        }
+    into
+            "devDependencies": {
+            ..
+            "typescript": "~3.5.1"
+        }
