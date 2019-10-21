@@ -7,3 +7,5 @@ git remote add cliapp https://github.com/raphlev/ng-my-cliapp.git
 git remote -v
 git fetch cliapp
 git pull cliapp master
+
+ff
