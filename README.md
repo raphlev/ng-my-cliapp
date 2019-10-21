@@ -13,13 +13,11 @@ git commit -m "This is my xx commit!"
 git push -u cliapp master
 
 Change from local vscode
-
 - Commit (automatic stage all changes + Vcommit) + Source Control Git > ...> push
-  From Stackblitz
+-->From Stackblitz
 - Pull current branch (from top left tackblitz github project)
 
 Change from stackblitz
-
 - Commit
-  From loacl vscode
+-->From loacl vscode
 - Source Control Git > ...> pull
