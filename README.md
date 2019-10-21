@@ -59,3 +59,16 @@ update tsconfig.app.json to solve compilation error:
             "main.ts",
             "polyfills.ts"
         ]
+
+# Fix https://github.com/angular/angular-cli/issues/15878
+"Machine-In-The-Middle" Vulnerability Caused by https-proxy-agent Dependency #15878
+npm i --save-dev npm-force-resolutions
+Add this to your package.json
+    "resolutions": {
+        "https-proxy-agent": "^3.0.0"
+    }
+Let npm-force-resolutions do it's thing
+- rm -r node_modules
+- npx npm-force-resolutions
+- npm install
+- re-run your audit npm audit.
