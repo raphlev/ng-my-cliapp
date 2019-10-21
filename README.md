@@ -14,7 +14,7 @@ git push -u cliapp master
 
 Change from local vscode
 
-- Commit (automatic stage all changes) + Source Control Git > ...> push
+- Commit (automatic stage all changes + Vcommit) + Source Control Git > ...> push
   From Stackblitz
 - Pull current branch (from top left tackblitz github project)
 
