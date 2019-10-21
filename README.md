@@ -16,8 +16,10 @@ Change from local vscode
 - Source Control Git > Commit (automatic stage all changes + Vcommit) + Source Control Git > ...> push
 -->From Stackblitz
 - Pull current branch (from top left tackblitz github project)
+- if error "Push rejected because it was not a simple fast-forward. Use "force: true" to override"
+  --> refresh F5 Stackblitz
 
 Change from stackblitz
-- Commit
+- >>Commit - if error --> refresh F5 Stackblitz and commit again
 -->From loacl vscode
 - Source Control Git > ...> pull
