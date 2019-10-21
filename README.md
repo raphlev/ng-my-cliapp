@@ -49,40 +49,51 @@ Source Control Git > ...> pull
 npm install
 Add angular.json manually from another existing project (replace project name, check if resources files exist)
 update tsconfig.app.json to solve compilation error:
-    update
-        "files": [
-            src/"main.ts",
-            src/"polyfills.ts"
-        ]
-    into
-        "files": [
-            "main.ts",
-            "polyfills.ts"
-        ]
+update
+"files": [
+src/"main.ts",
+src/"polyfills.ts"
+]
+into
+"files": [
+"main.ts",
+"polyfills.ts"
+]
 
 # Fix https://github.com/angular/angular-cli/issues/15878
+
 "Machine-In-The-Middle" Vulnerability Caused by https-proxy-agent Dependency #15878
 npm i --save-dev npm-force-resolutions
 Add this to your package.json
-    "resolutions": {
-        "https-proxy-agent": "^3.0.0"
-    }
+"resolutions": {
+"https-proxy-agent": "^3.0.0"
+}
 Let npm-force-resolutions do it's thing
+
 - rm -r node_modules
 - npx npm-force-resolutions
 - npm install
 - re-run your audit npm audit.
 
 # Fix ERROR in The Angular Compiler requires TypeScript >=3.4.0 and <3.6.0 but 3.6.4 was found instead
+
 Check in npm the previous version available
 In package.json,
-    replace
-        "devDependencies": {
-            ..
-            "typescript": "^3.6.4"
-        }
-    into
-            "devDependencies": {
-            ..
-            "typescript": "~3.5.1"
-        }
+replace
+"devDependencies": {
+..
+"typescript": "^3.6.4"
+}
+into
+"devDependencies": {
+..
+"typescript": "~3.5.1"
+}
+
+# npm dependencies
+
+Update Node dependencies to their latest version
+https://flaviocopes.com/update-npm-dependencies/
+
+Semantic Versioning using npm
+https://flaviocopes.com/npm-semantic-versioning/
