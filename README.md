@@ -8,4 +8,6 @@ git remote -v
 git fetch cliapp
 git pull cliapp master
 
-ff
+git add .
+git commit -m "This is my xx commit!"
+git push -u cliapp master
